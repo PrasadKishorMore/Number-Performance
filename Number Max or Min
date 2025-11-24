@@ -1,0 +1,28 @@
+
+
+ class Main{
+    
+    public static void main(String args[]){
+        
+        int num = 125;
+        
+        int Max = 1;
+        int Min = 1;
+        
+        while(num > 0){
+            
+            int digit = num%10;
+            if(digit > Max){
+                
+                Max = digit;
+            }else if(digit < Min){
+                Min = digit;
+            }
+            num /= 10;
+        }
+        
+        System.out.println(Max +" "+ Min);
+        
+       
+    }
+}
